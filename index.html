@@ -4,12 +4,6 @@
 <head>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-TH2ETNW6WL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-TH2ETNW6WL');
-  </script>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -27,6 +21,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
   <link href="css/style.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="/js/home.js"></script>
+  <script type="text/javascript" src="/js/script.js"></script>
 </head>
 
 <body>
@@ -61,7 +58,7 @@
                     <div class="mb-lg-5 pb-lg-5 my-4" id="email-form-container">
                         <form class="d-flex flex-column justify-content-center align-items-center" id="email-form"
                         method="post"
-                        action="https://script.google.com/macros/s/AKfycbz61Nnp-u39sALPITcE0V-jKJQ9_QfmZsF3GSOY9mxJcoixHfXaVoVDvaPJGqdmbKsX/exec">
+                        action="https://script.google.com/macros/s/AKfycbxOf8CQ0IJHWLIGqgIk6zCYGDgoLgPbr7_Bep1yC1_kR9UIKahb-aA1iZY8sWFGJEVf/exec">
                             <div class="col">
                                 <label for="input-email" class="form-label" id="email-label">SIGN UP FOR FREE DOWNLOAD</label>
                             </div>
@@ -71,7 +68,7 @@
                                         <input 
                                         type="email" 
                                         class="form-control form-control-lg" 
-                                        id="input-email" 
+                                        id="input-email"
                                         name="Email"
                                         pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" 
                                         placeholder="ENTER EMAIL"
@@ -113,27 +110,6 @@
             </div>
         </footer>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    <script type="application/javascript">
-        window.addEventListener("load", function() {
-            const form = document.getElementById('email-form');
-            form.addEventListener("submit", function(e) {
-                e.preventDefault();
-                const button = document.getElementById('input-button');
-                button.disabled = true;
-                button.textContent = 'Submitting...';
-                const data = new FormData(form);
-                const action = e.target.action;
-                fetch(action, { method: 'POST', body: data, })
-                .then(() => { 
-                    formDiv = document.getElementById('email-form-container');
-                    formDiv.innerHTML = 
-                    '<div class="text-center"><i class="bi bi-check-square user-tx-ico"></i></div><p class="user-tx-txt">Thank you for signing up!</p> <p class="user-tx-txt">We will be in touch soon.</p>';
-                 })
-            });
-        });
-    </script>
 </body>
 
 </html>
