@@ -35,9 +35,6 @@ window.addEventListener('load', () => {
       method: 'POST',
       body: data
     })
-      .then((response) => {
-        response.json();
-      })
       .then((data) => {
         button.disabled = true;
         button.textContent = 'Submitted!';
