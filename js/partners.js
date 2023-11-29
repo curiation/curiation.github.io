@@ -53,6 +53,7 @@ window.addEventListener('load', () => {
           window.open('https://curiate.youcanbook.me/'); // Open Calendly in new tab
           window.location.href = 'https://curiate.cc'; // Redirect to Curiate
         }, 2000); // Wait 5 seconds before opening Calendly
+        data.json();
       })
       .catch((error) => console.log('Error:', error));
   });
