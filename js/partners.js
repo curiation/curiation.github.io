@@ -51,7 +51,7 @@ window.addEventListener('load', () => {
         }, 50); // Wait 10 seconds before changing the form
         setTimeout(() => {
           window.open('https://curiate.youcanbook.me/'); // Open Calendly in new tab
-          window.location.href = 'https://curiate.cc'; // Redirect to Curiate
+          window.location.href = 'https://curiate.youcanbook.me/'; // Redirect Open Calendly in new tab
         }, 2000); // Wait 5 seconds before opening Calendly
         data.json();
       })
