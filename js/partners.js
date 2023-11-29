@@ -35,6 +35,9 @@ window.addEventListener('load', () => {
       method: 'POST',
       body: data
     })
+      .then((response) => {
+        response.json();
+      })
       .then((data) => {
         button.disabled = true;
         button.textContent = 'Submitted!';
@@ -52,7 +55,7 @@ window.addEventListener('load', () => {
           window.open('https://curiate.youcanbook.me/'); // Open Calendly in new tab
           window.location.href = 'https://curiate.cc'; // Redirect to Curiate
         }, 2000); // Wait 5 seconds before opening Calendly
-        return data;
+        data = '';
       })
       .catch((error) => console.log('Error:', error));
   });
