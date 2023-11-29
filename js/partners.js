@@ -35,27 +35,28 @@ window.addEventListener('load', () => {
       method: 'POST',
       body: data
     })
-      .then((response) => {
-        response.json();
-      })
       .then((data) => {
-        button.disabled = true;
-        button.textContent = 'Submitted!';
-        setTimeout(() => {
-          const formDiv = formDivs;
-          formDiv.innerHTML = `
-                                <div class="text-center">
-                                <i class="bi bi-check-square p-tx-ico"></i>
-                                </div>
-                                <p class="p-tx-txt">Thank you for providing the requested information!</p>
-                                <p class="p-tx-txt">You will be re-directed to setup a call with us shortly.</p>
-                                `;
-        }, 50); // Wait 10 seconds before changing the form
-        setTimeout(() => {
-          window.open('https://curiate.youcanbook.me/'); // Open Calendly in new tab
-          window.location.href = 'https://curiate.cc'; // Redirect to Curiate
-        }, 2000); // Wait 5 seconds before opening Calendly
-        data = '';
+        if (data.status === 'success') {
+          button.disabled = true;
+          button.textContent = 'Submitted!';
+          setTimeout(() => {
+            const formDiv = formDivs;
+            formDiv.innerHTML = `
+                                  <div class="text-center">
+                                  <i class="bi bi-check-square p-tx-ico"></i>
+                                  </div>
+                                  <p class="p-tx-txt">Thank you for providing the requested information!</p>
+                                  <p class="p-tx-txt">You will be re-directed to setup a call with us shortly.</p>
+                                  `;
+          }, 50); // Wait 10 seconds before changing the form
+          setTimeout(() => {
+            window.open('https://curiate.youcanbook.me/'); // Open Calendly in new tab
+            window.location.href = 'https://curiate.cc'; // Redirect to Curiate
+          }, 2000); // Wait 5 seconds before opening Calendly
+        } else {
+          button.disabled = false;
+          button.textContent = 'Submit';
+        }
       })
       .catch((error) => console.log('Error:', error));
   });
