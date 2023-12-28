@@ -46,11 +46,11 @@ window.addEventListener('load', () => {
                                 <i class="bi bi-check-square p-tx-ico"></i>
                                 </div>
                                 <p class="p-tx-txt">Thank you for providing the requested information!</p>
-                                <p class="p-tx-txt">You will be re-directed to setup a call with us shortly.</p>
+                                <p class="p-tx-txt">Someone from our team will be in touch with you soon.</p>
                                   `;
         }, 50); // Wait 10 seconds before changing the form
         setTimeout(() => {
-          window.open('https://curiate.youcanbook.me/'); // Open Calendly in new tab
+          // window.open('https://curiate.youcanbook.me/'); Open Calendly in new tab
           setTimeout(() => {
             window.location.href = 'https://curiate.cc'; // Redirect to Curiate
           }, 2000); // Wait 5 seconds before redirecting

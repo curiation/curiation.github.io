@@ -250,9 +250,9 @@ input[type="radio"] {
         font-weight         : 700;
         font-size           : 1rem;
         letter-spacing      : 0.125rem;
-        border              : 0.4rem solid black;
+        border              : 0.2rem solid black;
         border-radius       : 25px;
-        padding             : 0.5rem 0.5rem;
+        padding             : 0.4rem 1.2rem;
     }
     .btn-frosted {
         font-family         : 'Open Sans', sans-serif;
@@ -426,9 +426,8 @@ input[type="radio"] {
         text-align          : center;
         font-family         : 'Open Sans', sans-serif;
         font-weight         : 700;
-        font-size           : 2rem;
+        font-size           : 1.4rem;
         color               : black;
-        letter-spacing      : 0.5rem;
     }
     .tab-feature-ico {
         max-width           : 3rem;
@@ -491,9 +490,9 @@ input[type="radio"] {
         font-weight         : 700;
         font-size           : 1rem;
         letter-spacing      : 0.125rem;
-        border              : 0.4rem solid black;
+        border              : 0.2rem solid black;
         border-radius       : 25px;
-        padding             : 0.5rem 0.5rem;
+        padding             : 0.4rem 1.2rem;
     }
     .btn-frosted {
         font-family         : 'Open Sans', sans-serif;
@@ -739,9 +738,9 @@ input[type="radio"] {
         font-weight         : 700;
         font-size           : 1rem;
         letter-spacing      : 0.125rem;
-        border              : 0.4rem solid black;
+        border              : 0.2rem solid black;
         border-radius       : 25px;
-        padding             : 0.5rem 0.5rem;
+        padding             : 0.4rem 1.2rem;
     }
     .btn-frosted {
         font-family         : 'Open Sans', sans-serif;
@@ -985,9 +984,9 @@ input[type="radio"] {
     .btn-schedule-call {
         font-family         : 'Open Sans', sans-serif;
         font-weight         : 700;
-        border              : 0.4rem solid black;
+        border              : 0.2rem solid black;
         border-radius       : 25px;
-        padding             : 0.5rem 0.5rem;
+        padding             : 0.4rem 1.2rem;
     }
     .btn-frosted {
         font-family         : 'Open Sans', sans-serif;
@@ -1257,9 +1256,9 @@ input[type="radio"] {
         font-weight         : 700;
         font-size           : 0.875rem;
         letter-spacing      : 0.125rem;
-        border              : 7px solid black;
+        border              : 2px solid black;
         border-radius       : 25px;
-        padding             : 0.25rem 0.25rem;
+        padding             : 0.4rem 1.2rem;
     }
     .btn-frosted {
         font-family         : 'Open Sans', sans-serif;
@@ -1512,9 +1511,9 @@ input[type="radio"] {
         font-weight         : 700;
         font-size           : 1rem;
         letter-spacing      : 0.125rem;
-        border              : 0.4rem solid black;
+        border              : 0.0rem solid black;
         border-radius       : 25px;
-        padding             : 0.5rem 0.5rem;
+        padding             : 0.4rem 1.2rem;
     }
     .btn-frosted {
         font-family         : 'Open Sans', sans-serif;
@@ -1698,9 +1697,8 @@ input[type="radio"] {
         text-align          : center;
         font-family         : 'Open Sans', sans-serif;
         font-weight         : 700;
-        font-size           : 40px;
+        font-size           : 14px;
         color               : black;
-        letter-spacing      : 10px;
     }
     .tab-feature-ico {
         max-width           : 50px;
@@ -1769,9 +1767,9 @@ input[type="radio"] {
         font-weight         : 700;
         font-size           : 1rem;
         letter-spacing      : 0.125rem;
-        border              : 8px solid black;
+        border              : 2px solid black;
         border-radius       : 25px;
-        padding             : 0.5rem 0.5rem;
+        padding             : 0.4rem 1.2rem;
     }
     .btn-frosted {
         font-family         : 'Open Sans', sans-serif;
@@ -1836,5 +1834,147 @@ input[type="radio"] {
     }
     #about-me-arrow-pg-4 {
         margin: 11% 0% 0% 0%;
+    }
+}
+
+.learnmore-card {
+    width: 100%;
+    height: 100%;
+    padding: 2.6rem 1rem;
+    border: 10px solid rgb(140, 130, 115);
+    border-radius: 15%;
+    border-spacing: 22px;
+    text-transform: uppercase;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 12px 0;
+}
+.learnmore-card_header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    font-size: 18px;
+    gap: 1px;
+    font-weight: 700;
+}
+.learnmore-card_header > span {
+    letter-spacing: 5px;
+}
+.container-details {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    height: 100%;
+    align-items: first baseline;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+.container-details_min {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.tabs-features-icons {
+    background-color: #000;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 1400px) {
+    .learnmore-card_header {
+        font-size: 17px;
+        font-weight: 600;
+    }
+    .learnmore-card_header > span {
+        letter-spacing: 3px;
+    }
+    .container-details {
+        gap: 18px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .learnmore-card_header {
+        font-size: 13.4px;
+        font-weight: 600;
+    }
+    .learnmore-card_header > span {
+        letter-spacing: 3px;
+    }
+    .container-details {
+        gap: 18px;
+        font-size: 13.4px;
+    }
+}
+
+@media screen and (max-width: 537px) {
+    .learnmore-card {
+        margin: 10px 0;
+    }
+    .learnmore-card_header {
+        font-size: 14px;
+    }
+    .learnmore-card_header > span {
+        letter-spacing: 2px;
+    }
+    .container-details {
+        font-size: 14px;
+        gap: 8px;
+    }
+}
+
+@media screen and (max-width: 444px) {
+    .learnmore-card {
+        margin: 10px 0;
+    }
+    .learnmore-card_header {
+        font-size: 12px;
+    }
+    .learnmore-card_header > span {
+        letter-spacing: 2px;
+    }
+    .container-details {
+        font-size: 12px;
+        gap: 6px;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    .learnmore-card {
+        padding: 1.6rem 0.5rem;
+        margin: 10px 0;
+        gap: 4px;
+    }
+    .learnmore-card_header {
+        font-size: 9px;
+    }
+    .learnmore-card_header > span {
+        letter-spacing: 1px;
+    }
+    .container-details {
+        font-size: 9px;
+        gap: 4px;
+    }
+}
+
+@media screen and (max-width: 248px) {
+    .learnmore-card {
+        padding: 1rem 0.5rem;
+        margin: 5px 0;
+        gap: 5px;
+    }
+    .learnmore-card_header {
+        font-size: 6.4px;
+    }
+    .container-details {
+        font-size: 6.4px;
+        gap: 5px;
     }
 }
