@@ -204,12 +204,13 @@ input[type="radio"] {
     }
     .box {
         background-color    : white;
-        border              : 10px solid black;
+        border              : 2px solid black;
         border-radius       : 50px;
         padding-left        : 1.5rem;
         padding-right       : 1.5rem;
         padding-top         : 2rem;
         padding-bottom      : 2rem;
+        font-size           : 1rem !important;
     }
     #p-head {
         font-family         : 'Varela Round', sans-serif;
@@ -250,7 +251,8 @@ input[type="radio"] {
         font-weight         : 700;
         font-size           : 1rem;
         letter-spacing      : 0.125rem;
-        border              : 0.2rem solid black;
+        /*border              : 0.2rem solid black;*/
+        box-shadow          : rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         border-radius       : 25px;
         padding             : 0.4rem 1.2rem;
     }
@@ -444,7 +446,7 @@ input[type="radio"] {
     }
     .box {
         background-color    : white;
-        border              : 10px solid black;
+        border              : 3px solid black;
         border-radius       : 50px;
         padding-left        : 1.5rem;
         padding-right       : 1.5rem;
@@ -490,7 +492,8 @@ input[type="radio"] {
         font-weight         : 700;
         font-size           : 1rem;
         letter-spacing      : 0.125rem;
-        border              : 0.2rem solid black;
+        /*border              : 0.2rem solid black;*/
+        box-shadow          : rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         border-radius       : 25px;
         padding             : 0.4rem 1.2rem;
     }
@@ -688,7 +691,7 @@ input[type="radio"] {
     }
     .box {
         background-color    : white;
-        border              : 10px solid black;
+        border              : 4px solid black;
         border-radius       : 15%;
         padding-left        : 1.5rem;
         padding-right       : 1.5rem;
@@ -738,7 +741,8 @@ input[type="radio"] {
         font-weight         : 700;
         font-size           : 1rem;
         letter-spacing      : 0.125rem;
-        border              : 0.2rem solid black;
+        /*border              : 0.2rem solid black;*/
+        box-shadow          : rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         border-radius       : 25px;
         padding             : 0.4rem 1.2rem;
     }
@@ -940,8 +944,8 @@ input[type="radio"] {
     }
     .box {
         background-color    : white;
-        border              : 10px solid black;
-        border-radius       : 15%;
+        border              : 5px solid black;
+        border-radius       : 12%;
         padding-left        : 1.5rem;
         padding-right       : 1.5rem;
         padding-top         : 2rem;
@@ -984,7 +988,8 @@ input[type="radio"] {
     .btn-schedule-call {
         font-family         : 'Open Sans', sans-serif;
         font-weight         : 700;
-        border              : 0.2rem solid black;
+        /*border              : 0.2rem solid black;*/
+        box-shadow          : rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         border-radius       : 25px;
         padding             : 0.4rem 1.2rem;
     }
@@ -1210,8 +1215,8 @@ input[type="radio"] {
     }
     .box {
         background-color    : white;
-        border              : 10px solid black;
-        border-radius       : 15%;
+        border              : 5px solid black;
+        border-radius       : 13%;
         padding-left        : 1.25rem;
         padding-right       : 1.25rem;
         padding-top         : 1.75rem;
@@ -1256,7 +1261,8 @@ input[type="radio"] {
         font-weight         : 700;
         font-size           : 0.875rem;
         letter-spacing      : 0.125rem;
-        border              : 2px solid black;
+        /*border              : 2px solid black;*/
+        box-shadow          : rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         border-radius       : 25px;
         padding             : 0.4rem 1.2rem;
     }
@@ -1465,8 +1471,8 @@ input[type="radio"] {
     }
     .box {
         background-color    : white;
-        border              : 10px solid black;
-        border-radius       : 15%;
+        border              : 5px solid black;
+        border-radius       : 13%;
         padding-left        : 1.5rem;
         padding-right       : 1.5rem;
         padding-top         : 2rem;
@@ -1511,7 +1517,8 @@ input[type="radio"] {
         font-weight         : 700;
         font-size           : 1rem;
         letter-spacing      : 0.125rem;
-        border              : 0.0rem solid black;
+        /*border              : 0.0rem solid black;*/
+        box-shadow          : rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         border-radius       : 25px;
         padding             : 0.4rem 1.2rem;
     }
@@ -1719,10 +1726,13 @@ input[type="radio"] {
         padding-top         : 5px;
         padding-bottom      : 5px;
     }
+    .row {
+        height: 9vh;
+    }
     .box {
         background-color    : white;
-        border              : 10px solid black;
-        border-radius       : 15%;
+        border              : 6px solid black;
+        border-radius       : 14%;
         padding-left        : 1.5rem;
         padding-right       : 1.5rem;
         padding-top         : 2rem;
@@ -1767,9 +1777,10 @@ input[type="radio"] {
         font-weight         : 700;
         font-size           : 1rem;
         letter-spacing      : 0.125rem;
-        border              : 2px solid black;
+        /*border              : 0.2rem solid black;*/
+        box-shadow          : rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         border-radius       : 25px;
-        padding             : 0.4rem 1.2rem;
+        padding             : 0.2rem 3.9rem;
     }
     .btn-frosted {
         font-family         : 'Open Sans', sans-serif;
